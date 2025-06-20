@@ -1,1 +1,141 @@
-<p>register works!</p>
+<body class="min-h-screen bg-gradient-to-br from-gym-dark via-gym-gray to-black flex items-center justify-center p-4">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+    </div>
+
+    <!-- Register Container -->
+    <div class="relative w-full max-w-md">
+
+        <!-- Register Form -->
+        <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-2xl border border-white/20">
+            <form class="space-y-6">
+                <div>
+                    <h2 class="text-2xl font-semibold text-white mb-6 text-center">Crear Cuenta</h2>
+                </div>
+
+                <!-- Email Field -->
+                <div class="space-y-2">
+                    <label for="email" class="block text-sm font-medium text-gray-200">
+                        Correo Electrónico
+                    </label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg class="h-5 w-5 text-gym-mint" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"/>
+                            </svg>
+                        </div>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email"
+                            class="block w-full pl-10 pr-3 py-3 border border-gray-600 rounded-lg bg-gym-dark text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gym-green focus:border-transparent transition-all duration-200"
+                            placeholder="tu@email.com"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <!-- Password Field -->
+                <div class="space-y-2">
+                    <label for="password" class="block text-sm font-medium text-gray-200">
+                        Contraseña
+                    </label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg class="h-5 w-5 text-gym-mint" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                        </div>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password"
+                            class="block w-full pl-10 pr-10 py-3 border border-gray-600 rounded-lg bg-gym-dark text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gym-green focus:border-transparent transition-all duration-200"
+                            placeholder="••••••••"
+                            required
+                        >
+                        <button type="button" class="absolute inset-y-0 right-0 pr-3 flex items-center">
+                            <svg class="h-5 w-5 text-gym-mint hover:text-gym-green-light transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Confirm Password Field -->
+                <div class="space-y-2">
+                    <label for="confirmPassword" class="block text-sm font-medium text-gray-200">
+                        Confirmar Contraseña
+                    </label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg class="h-5 w-5 text-gym-mint" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <input 
+                            type="password" 
+                            id="confirmPassword" 
+                            name="confirmPassword"
+                            class="block w-full pl-10 pr-3 py-3 border border-gray-600 rounded-lg bg-gym-dark text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gym-green focus:border-transparent transition-all duration-200"
+                            placeholder="••••••••"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <!-- Terms and Conditions -->
+                <div class="flex items-start">
+                    <div class="flex items-center h-5">
+                        <input 
+                            id="terms" 
+                            name="terms" 
+                            type="checkbox" 
+                            class="h-4 w-4 text-gym-green focus:ring-gym-green border-gray-600 rounded bg-white/5"
+                            required
+                        >
+                    </div>
+                    <div class="ml-3 text-sm">
+                        <label for="terms" class="text-gray-300">
+                            Acepto los 
+                            <a href="#" class="font-medium text-gym-green-light hover:text-gym-mint transition-colors">
+                                Términos y Condiciones
+                            </a>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Register Button -->
+                <button 
+                    type="submit" 
+                    class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-lg text-sm font-medium text-white bg-gradient-to-r from-gym-green to-gym-green-light hover:from-gym-green-dark hover:to-gym-green focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gym-green transition-all duration-200 transform hover:scale-105"
+                >
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"/>
+                    </svg>
+                    Crear Mi Cuenta
+                </button>
+            </form>
+
+            <!-- Login Link -->
+            <div class="mt-6 text-center">
+                <p class="text-sm text-gray-400">
+                    ¿Ya tienes una cuenta? 
+                    <a routerLink="/login" class="font-medium text-gym-green-light hover:text-gym-mint transition-colors">
+                        Inicia sesión aquí
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-8 text-center">
+            <p class="text-xs text-gray-500">
+                © 2024 AngularGym. Todos los derechos reservados.
+            </p>
+        </div>
+    </div>
+</body>
+
+

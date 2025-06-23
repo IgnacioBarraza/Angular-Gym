@@ -1,18 +1,15 @@
 <section class="min-h-screen bg-gradient-to-br from-gym-dark via-gym-gray to-black flex items-center justify-center p-4">
-  <!-- Login Container -->
+  
   <div class="w-full max-w-md space-y-8 bg-white/10 backdrop-blur-xl rounded-2xl p-10 shadow-2xl border border-white/10">
     
-    <!-- Logo / Branding -->
     <div class="text-center">
       <h1 class="text-4xl font-bold text-gym-green mb-2">AngularGym</h1>
       <p class="text-gym-mint text-sm"></p>
     </div>
-
-    <!-- Login Form -->
+    
     <form class="space-y-6">
       <h2 class="text-2xl font-semibold text-white text-center">Iniciar Sesión</h2>
 
-      <!-- Email -->
       <div>
         <label for="email" class="block text-sm font-medium text-gym-mint mb-1">Correo Electrónico</label>
         <input
@@ -25,7 +22,6 @@
         >
       </div>
 
-      <!-- Password -->
       <div>
         <label for="password" class="block text-sm font-medium text-gym-mint mb-1">Contraseña</label>
         <input
@@ -38,7 +34,6 @@
         >
       </div>
 
-      <!-- Recordarme y Olvidé contraseña -->
       <div class="flex items-center justify-between text-sm">
         <label class="flex items-center text-gym-light">
           <input type="checkbox" class="h-4 w-4 text-gym-green-light bg-gym-gray border-gray-600 rounded mr-2 focus:ring-gym-mint">
@@ -47,7 +42,6 @@
         <a href="#" class="text-gym-green hover:text-gym-mint transition-colors">¿Olvidaste tu contraseña?</a>
       </div>
 
-      <!-- Botón de Iniciar Sesión -->
       <button
         routerLink="/dashboard"
         type="submit"
@@ -57,7 +51,6 @@
       </button>
     </form>
 
-    <!-- Divider -->
     <div class="flex justify-center items-center gap-2 mt-10 mb-6 text-sm">
       <span class="text-gym-light">¿No tienes una cuenta?</span>
       <a routerLink="/register" class="text-gym-mint hover:text-white font-medium transition-colors">
@@ -65,7 +58,6 @@
       </a>
     </div>
 
-    <!-- Footer -->
     <div class="text-center mt-8 text-xs text-gray-500">
       © 2024 AngularGym. Todos los derechos reservados.
     </div>

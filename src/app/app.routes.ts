@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { Login } from './auth/login/login';
-import { Register } from './auth/register/register';
+import { Login } from './pages/auth/login/login';
+import { Register } from './pages/auth/register/register';
 import { Dashboard } from './pages/dashboard/dashboard';
 
 export const routes: Routes = [

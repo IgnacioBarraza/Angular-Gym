@@ -8,22 +8,11 @@
     </div>
 
     <div class="hidden md:flex items-center space-x-8">
-      <a href="#" class="px-4 py-2 rounded-lg text-xl font-medium text-gray-700 hover:text-gym-green hover:bg-gym-light transition">
-        Máquinas
-      </a>
-      <a href="#" class="px-4 py-2 rounded-lg text-xl font-medium text-gray-700 hover:text-gym-green hover:bg-gym-light transition">
-        Ejercicios
-      </a>
-      <a href="#" class="px-4 py-2 rounded-lg text-xl font-medium text-gray-700 hover:text-gym-green hover:bg-gym-light transition">
-        Rutinas
-      </a>
-      <a href="#" class="px-4 py-2 rounded-lg text-xl font-medium text-gray-700 hover:text-gym-green hover:bg-gym-light transition">
-        Acerca de
-      </a>
-      <div class="h-6 w-px bg-gray-300 mx-2"></div>
-      <a href="#" class="px-4 py-2 rounded-lg text-xl font-medium text-red-600 hover:text-red-700 hover:bg-red-50 transition">
-        Cerrar Sesión
-      </a>
+      @for(item of items; track item.name){
+        <app-nav-item [data]=item></app-nav-item>
+      }
+      <button class="px-4 py-2 rounded-lg text-xl font-medium text-red-600 hover:text-red-700 hover:bg-red-50 transition">Cerrar Sesión</button>
     </div>
   </div>
 </nav>
+

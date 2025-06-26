@@ -1,1 +1,131 @@
 <app-navbar></app-navbar>
+<body class="bg-gradient-to-br from-gym-dark via-black to-gym-gray">
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+        <div class="container mx-auto px-6 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Contenido Principal -->
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="text-5xl lg:text-7xl font-bold text-white leading-tight">
+                            TRANSFORMA
+                            <span class="block text-gym-green">TU CUERPO</span>
+                        </h1>
+                        <p class="text-xl text-gray-300 leading-relaxed max-w-lg">
+                            Únete a la revolución fitness. Entrena con los mejores, alcanza tus metas y conviértete en la mejor versión de ti mismo.
+                        </p>
+                    </div>
+
+                    <!-- Botones -->
+                    <div class="flex flex-col sm:flex-row gap-4 items-center">
+                        <button class="bg-gym-green hover:bg-gym-green-dark text-white px-8 py-4 text-lg font-semibold rounded-lg transition-colors">
+                            Comenzar Ahora
+                        </button>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-8 pt-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-gym-green">500+</div>
+                            <div class="text-gray-400 text-sm">Miembros Activos</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-gym-green">50+</div>
+                            <div class="text-gray-400 text-sm">Entrenamientos</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-gym-green">24/7</div>
+                            <div class="text-gray-400 text-sm">Disponible</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen Hero -->
+                <div class="relative">
+                    <div class="relative z-10">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Atleta entrenando" 
+                             class="w-full h-[600px] object-cover rounded-2xl shadow-2xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gym-dark/70 to-transparent rounded-2xl"></div>
+                    </div>
+                    <div class="absolute -top-4 -right-4 w-72 h-72 bg-gym-green/20 rounded-full blur-3xl"></div>
+                    <div class="absolute -bottom-8 -left-8 w-64 h-64 bg-gym-mint/20 rounded-full blur-3xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-gym-gray/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">¿Por qué elegirnos?</h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Ofrecemos la mejor experiencia de entrenamiento con tecnología de punta
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gym-gray/50 p-8 rounded-xl border border-gray-700 hover:border-gym-green/50 transition-colors">
+                    <div class="w-12 h-12 bg-gym-green/20 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="h-6 w-6 text-gym-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Comunidad Activa</h3>
+                    <p class="text-gray-400">
+                        Únete a una comunidad de atletas motivados que te ayudarán a alcanzar tus objetivos.
+                    </p>
+                </div>
+
+                <div class="bg-gym-gray/50 p-8 rounded-xl border border-gray-700 hover:border-gym-green/50 transition-colors">
+                    <div class="w-12 h-12 bg-gym-green/20 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="h-6 w-6 text-gym-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                            <path d="M14 9h1.5a2.5 2.5 0 0 0 0-5H14"/>
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+                            <path d="M6 2h12"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Entrenamientos Premium</h3>
+                    <p class="text-gray-400">
+                        Accede a rutinas diseñadas por expertos y adaptadas a tu nivel de condición física.
+                    </p>
+                </div>
+
+                <div class="bg-gym-gray/50 p-8 rounded-xl border border-gray-700 hover:border-gym-green/50 transition-colors">
+                    <div class="w-12 h-12 bg-gym-green/20 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="h-6 w-6 text-gym-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Flexibilidad Total</h3>
+                    <p class="text-gray-400">
+                        Entrena cuando quieras, donde quieras. Tu gimnasio está disponible 24/7.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold text-white mb-6">¿Listo para comenzar tu transformación?</h2>
+                <p class="text-xl text-gray-300 mb-8">Únete a miles de personas que ya están cambiando sus vidas</p>
+                <button class="bg-gym-green hover:bg-gym-green-dark text-white px-12 py-4 text-lg font-semibold rounded-lg transition-colors shadow-lg shadow-gym-green/25">
+                    Empezar Gratis
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+<app-footer></app-footer>
+

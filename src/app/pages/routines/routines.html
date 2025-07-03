@@ -1,0 +1,315 @@
+<app-navbar></app-navbar>
+<div class="min-h-screen bg-gradient-to-br from-gym-dark via-gym-gray to-gym-dark relative overflow-hidden">
+  <!-- Animated Background Elements -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute -top-40 -right-40 w-80 h-80 bg-gym-green opacity-10 rounded-full blur-3xl animate-pulse"></div>
+    <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-gym-mint opacity-10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gym-green-light opacity-5 rounded-full blur-3xl animate-pulse delay-500"></div>
+  </div>
+
+  <!-- Header with Stats -->
+  <header class="relative z-10 p-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col lg:flex-row items-center justify-between mb-8">
+        <div class="text-center lg:text-left mb-6 lg:mb-0">
+          <h1 class="text-5xl font-black text-white mb-2 tracking-tight">
+            Ejercicio <span class="text-gym-green">Rutinas</span>
+          </h1>
+          <p class="text-gym-mint text-lg">
+            Transforma tu experiencia de fitness con rutinas personalizadas</p>
+        </div>
+        
+        <!-- Stats Cards -->
+        <div class="flex gap-4">
+          <div class="glass-card p-4 text-center min-w-[100px]">
+            <div class="text-2xl font-bold text-gym-green">12</div>
+            <div class="text-xs text-gym-mint uppercase tracking-wide">Rutinas</div>
+          </div>
+          <div class="glass-card p-4 text-center min-w-[100px]">
+            <div class="text-2xl font-bold text-gym-green-light">24</div>
+            <div class="text-xs text-gym-mint uppercase tracking-wide">Completada</div>
+          </div>
+          <div class="glass-card p-4 text-center min-w-[100px]">
+            <div class="text-2xl font-bold text-white">7</div>
+            <div class="text-xs text-gym-mint uppercase tracking-wide">Racha del día</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress Ring -->
+      <div class="flex justify-center mb-8">
+        <div class="relative w-32 h-32">
+          <svg class="w-32 h-32 transform -rotate-90" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="50" stroke="rgba(16, 185, 129, 0.2)" stroke-width="8" fill="none"></circle>
+            <circle 
+              cx="60" cy="60" r="50" 
+              stroke="#10B981" 
+              stroke-width="8" 
+              fill="none"
+              stroke-linecap="round"
+              style="stroke-dasharray: 314; stroke-dashoffset: 78.5;"
+              class="transition-all duration-1000 ease-out"
+            ></circle>
+          </svg>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center">
+              <div class="text-2xl font-bold text-white">75%</div>
+              <div class="text-xs text-gym-mint">Objetivo semanal</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="relative z-10 max-w-7xl mx-auto px-6 pb-12">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      
+      <!-- Routines List -->
+      <div class="lg:col-span-2 space-y-6">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-2xl font-bold text-white">Tus rutinas</h2>
+          <button class="floating-btn bg-gym-green hover:bg-gym-green-dark text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg">
+            + Nueva Rutina
+          </button>
+        </div>
+
+        <!-- Routine Cards -->
+        <div class="space-y-4">
+          <!-- Routine Card 1 -->
+          <div class="routine-card selected cursor-pointer transition-all duration-300">
+            <div class="flex items-center justify-between p-6">
+              <div class="flex-1">
+                <div class="flex items-center gap-3 mb-2">
+                  <h3 class="text-xl font-bold text-white">Poder de la mañana</h3>
+                  <span class="px-3 py-1 rounded-full text-xs font-medium bg-gym-green-light bg-opacity-20 text-gym-green-light">
+                    Intermedio
+                  </span>
+                </div>
+                <p class="text-gym-mint text-sm mb-3">Rutina matutina de alta intensidad para empezar el día con energía y fuerza.</p>
+                <div class="flex items-center gap-4 text-sm">
+                  <span class="text-gym-green">4 ejercicios</span>
+                  <span class="text-gym-mint">45 min</span>
+                  <span class="text-white">Cuerpo completo</span>
+                </div>
+              </div>
+              
+              <!-- Progress Circle -->
+              <div class="relative w-16 h-16 ml-4">
+                <svg class="w-16 h-16 transform -rotate-90" viewBox="0 0 60 60">
+                  <circle cx="30" cy="30" r="25" stroke="rgba(255, 255, 255, 0.1)" stroke-width="4" fill="none"></circle>
+                  <circle 
+                    cx="30" cy="30" r="25" 
+                    stroke="#34D399" 
+                    stroke-width="4" 
+                    fill="none"
+                    stroke-linecap="round"
+                    style="stroke-dasharray: 157; stroke-dashoffset: 23.55;"
+                    class="transition-all duration-500"
+                  ></circle>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <span class="text-xs font-bold text-white">85%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="px-6 pb-4 flex gap-2">
+              <button class="flex-1 bg-gym-green hover:bg-gym-green-dark text-white py-2 px-4 rounded-lg text-sm font-medium transition-colors duration-200">
+                Ver ejercicios
+              </button>
+              <button class="px-4 py-2 border border-gym-mint text-gym-mint hover:bg-gym-mint hover:text-gym-dark rounded-lg text-sm font-medium transition-colors duration-200">
+                Editar
+              </button>
+            </div>
+          </div>
+
+          <!-- Routine Card 2 -->
+          <div class="routine-card cursor-pointer transition-all duration-300">
+            <div class="flex items-center justify-between p-6">
+              <div class="flex-1">
+                <div class="flex items-center gap-3 mb-2">
+                  <h3 class="text-xl font-bold text-white">Strength Builder</h3>
+                  <span class="px-3 py-1 rounded-full text-xs font-medium bg-gym-green-dark bg-opacity-20 text-gym-green-dark">
+                    Avanzado
+                  </span>
+                </div>
+                <p class="text-gym-mint text-sm mb-3">Rutina de entrenamiento de fuerza progresiva centrada en los principales grupos musculares..</p>
+                <div class="flex items-center gap-4 text-sm">
+                  <span class="text-gym-green">3 ejercicios</span>
+                  <span class="text-gym-mint">60 min</span>
+                  <span class="text-white">Tren superior, Tren inferior</span>
+                </div>
+              </div>
+              
+              <!-- Progress Circle -->
+              <div class="relative w-16 h-16 ml-4">
+                <svg class="w-16 h-16 transform -rotate-90" viewBox="0 0 60 60">
+                  <circle cx="30" cy="30" r="25" stroke="rgba(255, 255, 255, 0.1)" stroke-width="4" fill="none"></circle>
+                  <circle 
+                    cx="30" cy="30" r="25" 
+                    stroke="#34D399" 
+                    stroke-width="4" 
+                    fill="none"
+                    stroke-linecap="round"
+                    style="stroke-dasharray: 157; stroke-dashoffset: 12.56;"
+                    class="transition-all duration-500"
+                  ></circle>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <span class="text-xs font-bold text-white">92%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="px-6 pb-4 flex gap-2">
+              <button class="flex-1 bg-gym-green hover:bg-gym-green-dark text-white py-2 px-4 rounded-lg text-sm font-medium transition-colors duration-200">
+                Ver ejercicios
+              </button>
+              <button class="px-4 py-2 border border-gym-mint text-gym-mint hover:bg-gym-mint hover:text-gym-dark rounded-lg text-sm font-medium transition-colors duration-200">
+                Editar
+              </button>
+            </div>
+          </div>
+
+          <!-- Routine Card 3 -->
+          <div class="routine-card cursor-pointer transition-all duration-300">
+            <div class="flex items-center justify-between p-6">
+              <div class="flex-1">
+                <div class="flex items-center gap-3 mb-2">
+                  <h3 class="text-xl font-bold text-white">Cardio Blast</h3>
+                  <span class="px-3 py-1 rounded-full text-xs font-medium bg-gym-green bg-opacity-20 text-gym-green">
+                    Principiante
+                  </span>
+                </div>
+                <p class="text-gym-mint text-sm mb-3">Rutina cardiovascular de alta energía para mejorar la resistencia y quemar calorías.</p>
+                <div class="flex items-center gap-4 text-sm">
+                  <span class="text-gym-green">3 ejercicios</span>
+                  <span class="text-gym-mint">30 min</span>
+                  <span class="text-white">Cardiovascular, Piernas</span>
+                </div>
+              </div>
+              
+              <!-- Progress Circle -->
+              <div class="relative w-16 h-16 ml-4">
+                <svg class="w-16 h-16 transform -rotate-90" viewBox="0 0 60 60">
+                  <circle cx="30" cy="30" r="25" stroke="rgba(255, 255, 255, 0.1)" stroke-width="4" fill="none"></circle>
+                  <circle 
+                    cx="30" cy="30" r="25" 
+                    stroke="#34D399" 
+                    stroke-width="4" 
+                    fill="none"
+                    stroke-linecap="round"
+                    style="stroke-dasharray: 157; stroke-dashoffset: 34.54;"
+                    class="transition-all duration-500"
+                  ></circle>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <span class="text-xs font-bold text-white">78%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="px-6 pb-4 flex gap-2">
+              <button class="flex-1 bg-gym-green hover:bg-gym-green-dark text-white py-2 px-4 rounded-lg text-sm font-medium transition-colors duration-200">
+                Ver ejercicios
+              </button>
+              <button class="px-4 py-2 border border-gym-mint text-gym-mint hover:bg-gym-mint hover:text-gym-dark rounded-lg text-sm font-medium transition-colors duration-200">
+                Editar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Routine Detail Panel -->
+      <div class="lg:col-span-1">
+        <div class="glass-card p-6 sticky top-6">
+          <!-- Routine Header -->
+          <div class="mb-6">
+            <h3 class="text-xl font-bold text-white mb-2">Poder de la mañana</h3>
+            <p class="text-gym-mint text-sm mb-4">Rutina matutina de alta intensidad para empezar el día con energía y fuerza.</p>
+            
+            <!-- Routine Stats -->
+            <div class="grid grid-cols-2 gap-4 mb-4">
+              <div class="text-center p-3 bg-gym-green bg-opacity-10 rounded-lg">
+                <div class="text-lg font-bold text-gym-green">4</div>
+                <div class="text-xs text-gym-mint">Ejercicios</div>
+              </div>
+              <div class="text-center p-3 bg-gym-green-light bg-opacity-10 rounded-lg">
+                <div class="text-lg font-bold text-gym-green-light">45</div>
+                <div class="text-xs text-gym-mint">Minutos</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exercise Timeline -->
+          <div class="space-y-4">
+            <h4 class="text-sm font-semibold text-white uppercase tracking-wide">Cronograma del ejercicio</h4>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3 p-3 bg-white bg-opacity-5 rounded-lg hover:bg-opacity-10 transition-colors duration-200">
+                <div class="w-8 h-8 bg-gym-green rounded-full flex items-center justify-center text-white text-sm font-bold">
+                  1
+                </div>
+                <div class="flex-1">
+                  <div class="text-white font-medium text-sm">Push-ups</div>
+                  <div class="text-gym-mint text-xs">3 sets × 12-15 reps</div>
+                </div>
+                <div class="text-gym-green-light text-xs">60s</div>
+              </div>
+
+              <div class="flex items-center gap-3 p-3 bg-white bg-opacity-5 rounded-lg hover:bg-opacity-10 transition-colors duration-200">
+                <div class="w-8 h-8 bg-gym-green rounded-full flex items-center justify-center text-white text-sm font-bold">
+                  2
+                </div>
+                <div class="flex-1">
+                  <div class="text-white font-medium text-sm">Squats</div>
+                  <div class="text-gym-mint text-xs">3 sets × 15-20 reps</div>
+                </div>
+                <div class="text-gym-green-light text-xs">60s</div>
+              </div>
+
+              <div class="flex items-center gap-3 p-3 bg-white bg-opacity-5 rounded-lg hover:bg-opacity-10 transition-colors duration-200">
+                <div class="w-8 h-8 bg-gym-green rounded-full flex items-center justify-center text-white text-sm font-bold">
+                  3
+                </div>
+                <div class="flex-1">
+                  <div class="text-white font-medium text-sm">Plank</div>
+                  <div class="text-gym-mint text-xs">3 sets × 30-60s</div>
+                </div>
+                <div class="text-gym-green-light text-xs">45s</div>
+              </div>
+
+              <div class="flex items-center gap-3 p-3 bg-white bg-opacity-5 rounded-lg hover:bg-opacity-10 transition-colors duration-200">
+                <div class="w-8 h-8 bg-gym-green rounded-full flex items-center justify-center text-white text-sm font-bold">
+                  4
+                </div>
+                <div class="flex-1">
+                  <div class="text-white font-medium text-sm">Burpees</div>
+                  <div class="text-gym-mint text-xs">3 sets × 8-12 reps</div>
+                </div>
+                <div class="text-gym-green-light text-xs">90s</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="mt-6 space-y-3">
+            <button class="w-full bg-gradient-to-r from-gym-green to-gym-green-light text-white py-3 px-4 rounded-lg font-medium hover:shadow-lg transition-all duration-300 hover:scale-105">
+              Ver ejercicios
+            </button>
+            <button class="w-full border border-gym-mint text-gym-mint hover:bg-gym-mint hover:text-gym-dark py-3 px-4 rounded-lg font-medium transition-colors duration-200">
+              Preview del ejercicio
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</div>
+<app-footer></app-footer>

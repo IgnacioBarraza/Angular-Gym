@@ -1,5 +1,12 @@
 <app-navbar></app-navbar>
-<div class="min-h-screen bg-gray-800">
+<div class="min-h-screen bg-gradient-to-br from-gym-dark via-gym-gray to-gym-dark relative overflow-hidden">
+  <!-- Animated Background Elements -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute -top-40 -right-40 w-80 h-80 bg-gym-green opacity-10 rounded-full blur-3xl animate-pulse"></div>
+    <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-gym-mint opacity-10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gym-green-light opacity-5 rounded-full blur-3xl animate-pulse delay-500"></div>
+  </div>
+<div class="min-h-screen">
   <!-- Header -->
   <header class="bg-gym-dark text-white py-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

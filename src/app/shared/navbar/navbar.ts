@@ -3,6 +3,7 @@ import { NavItem } from '../nav-item/nav-item';
 
 @Component({
   selector: 'app-navbar',
+  standalone: true,
   imports: [NavItem],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css'

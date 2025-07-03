@@ -1,75 +1,79 @@
 <app-navbar></app-navbar>
-<body class="bg-gradient-to-br from-gym-dark via-black to-gym-gray">
+<body class="bg-gradient-to-br from-gym-dark via-black to-gym-gray w-[100vw] max-w-full">
 
     <!-- Hero Section -->
-    <section class="relative overflow-hidden">
-        <div class="container mx-auto px-6 py-20">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
+    <section class="relative overflow-y-hidden">
+        <div class="container mx-auto px-4 sm:px-6 py-12 sm:py-20 max-w-7xl">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 
-                <!-- Contenido Principal MOM-->
-                <div class="space-y-8">
+                <!-- Main Content -->
+                <div class="space-y-6 sm:space-y-8 order-2 lg:order-1">
                     <div class="space-y-4">
-                        <h1 class="text-5xl lg:text-7xl font-bold text-white leading-tight">
+                        <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight">
                             TRANSFORMA
                             <span class="block text-gym-green">TU CUERPO</span>
                         </h1>
-                        <p class="text-xl text-gray-300 leading-relaxed max-w-lg">
+                        <p class="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-lg">
                             Únete a la revolución fitness. Entrena con los mejores, alcanza tus metas y conviértete en la mejor versión de ti mismo.
                         </p>
                     </div>
-                    
-                    <!-- Botones -->
-                    <div class="flex flex-col sm:flex-row gap-4 items-center">
-                        <button class="bg-gym-green hover:bg-gym-green-dark text-white px-8 py-4 text-lg font-semibold rounded-lg transition-colors">
+
+                    <!-- Button -->
+                    <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                        <button class="bg-gym-green hover:bg-gym-green-dark text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-lg transition-colors w-full sm:w-auto">
                             Comenzar Ahora
                         </button>
                     </div>
 
                     <!-- Stats -->
-                    <div class="grid grid-cols-3 gap-8 pt-8">
+                    <div class="grid grid-cols-3 gap-4 sm:gap-8 pt-6 sm:pt-8">
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-gym-green">500+</div>
-                            <div class="text-gray-400 text-sm">Miembros Activos</div>
+                            <div class="text-2xl sm:text-3xl font-bold text-gym-green">500+</div>
+                            <div class="text-gray-400 text-xs sm:text-sm">Miembros Activos</div>
                         </div>
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-gym-green">50+</div>
-                            <div class="text-gray-400 text-sm">Entrenamientos</div>
+                            <div class="text-2xl sm:text-3xl font-bold text-gym-green">50+</div>
+                            <div class="text-gray-400 text-xs sm:text-sm">Entrenamientos</div>
                         </div>
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-gym-green">24/7</div>
-                            <div class="text-gray-400 text-sm">Disponible</div>
+                            <div class="text-2xl sm:text-3xl font-bold text-gym-green">24/7</div>
+                            <div class="text-gray-400 text-xs sm:text-sm">Disponible</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Imagen Hero -->
-                <div class="relative">
-                    <div class="relative z-10">
-                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                             alt="Atleta entrenando" 
-                             class="w-full h-[600px] object-cover rounded-2xl shadow-2xl">
+                <!-- Hero Image -->
+                <div class="relative order-1 lg:order-2 max-w-full">
+                    <div class="relative z-10 overflow-hidden">
+                        <img
+                            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                            alt="Atleta entrenando"
+                            class="w-full object-cover rounded-2xl shadow-2xl"
+                        />
                         <div class="absolute inset-0 bg-gradient-to-t from-gym-dark/70 to-transparent rounded-2xl"></div>
                     </div>
-                    <div class="absolute -top-4 -right-4 w-72 h-72 bg-gym-green/20 rounded-full blur-3xl"></div>
-                    <div class="absolute -bottom-8 -left-8 w-64 h-64 bg-gym-mint/20 rounded-full blur-3xl"></div>
+
+                    <!-- Background Effects - Contained within parent -->
+                    <div class="absolute top-10 left-0 w-48 sm:w-72 h-48 sm:h-72 bg-gym-green/20 rounded-full blur-3xl -z-10"></div>
+                    <div class="absolute bottom-10 right-0 w-40 sm:w-64 h-40 sm:h-64 bg-gym-mint/20 rounded-full blur-3xl -z-10"></div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Features Section -->
-    <section class="py-20 bg-gym-gray/50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-white mb-4">¿Por qué elegirnos?</h2>
-                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+   
+    <div class="py-12 sm:py-20 bg-gym-gray/50">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 overflow-hidden">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">¿Por qué elegirnos?</h2>
+                <p class="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
                     Ofrecemos la mejor experiencia de entrenamiento con tecnología de punta
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gym-gray/50 p-8 rounded-xl border border-gray-700 hover:border-gym-green/50 transition-colors">
-                    <div class="w-12 h-12 bg-gym-green/20 rounded-lg flex items-center justify-center mb-6">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-gym-gray/50 p-6 sm:p-8 rounded-xl border border-gray-700 hover:border-gym-green/50 transition-colors">
+                    <div class="w-12 h-12 bg-gym-green/20 rounded-lg flex items-center justify-center mb-6 overflow-hidden">
                         <svg class="h-6 w-6 text-gym-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
                             <circle cx="9" cy="7" r="4"/>
@@ -83,7 +87,8 @@
                     </p>
                 </div>
 
-                <div class="bg-gym-gray/50 p-8 rounded-xl border border-gray-700 hover:border-gym-green/50 transition-colors">
+                <!-- Feature 2 -->
+                <div class="bg-gym-gray/50 p-6 sm:p-8 rounded-xl border border-gray-700 hover:border-gym-green/50 transition-colors">
                     <div class="w-12 h-12 bg-gym-green/20 rounded-lg flex items-center justify-center mb-6">
                         <svg class="h-6 w-6 text-gym-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
@@ -98,7 +103,8 @@
                     </p>
                 </div>
 
-                <div class="bg-gym-gray/50 p-8 rounded-xl border border-gray-700 hover:border-gym-green/50 transition-colors">
+                <!-- Feature 3 -->
+                <div class="bg-gym-gray/50 p-6 sm:p-8 rounded-xl border border-gray-700 hover:border-gym-green/50 transition-colors sm:col-span-2 lg:col-span-1">
                     <div class="w-12 h-12 bg-gym-green/20 rounded-lg flex items-center justify-center mb-6">
                         <svg class="h-6 w-6 text-gym-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="12" cy="12" r="10"/>
@@ -112,20 +118,8 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-20">
-        <div class="container mx-auto px-6 text-center">
-            <div class="max-w-3xl mx-auto">
-                <h2 class="text-4xl font-bold text-white mb-6">¿Listo para comenzar tu transformación?</h2>
-                <p class="text-xl text-gray-300 mb-8">Únete a miles de personas que ya están cambiando sus vidas</p>
-                <button class="bg-gym-green hover:bg-gym-green-dark text-white px-12 py-4 text-lg font-semibold rounded-lg transition-colors shadow-lg shadow-gym-green/25">
-                    Empezar Gratis
-                </button>
-            </div>
-        </div>
-    </section>
+    </div>
 </body>
 <app-footer></app-footer>
+
 

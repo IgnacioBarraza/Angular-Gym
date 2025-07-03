@@ -7,28 +7,28 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
-  imports: [RouterOutlet, RouterLink, CommonModule, FormsModule],
+  imports: [RouterOutlet, RouterLink, FormsModule],
   templateUrl: './login.html',
   styleUrl: './login.css'
 })
 export class Login {
-  email = '';
-  password = '';
+  email = ''
+  password = ''
 
-  private authService = inject(Auth);
-  private router = inject(Router);
+  private authService = inject(Auth)
+  private router = inject(Router)
 
   handleLogin() {
     this.authService.login(this.email, this.password).subscribe({
       next: (res) => {
-        localStorage.setItem('token', res.token);
+        localStorage.setItem('token', res.token)
         console.log(decodeToken(res.token))
-        this.router.navigate(['/dashboard']); // Ajusta según tu ruta privada
+        this.router.navigate(['/dashboard'])
       },
       error: (err) => {
-        console.error('Error al iniciar sesión', err);
-        alert('Credenciales inválidas o error de servidor');
+        console.error('Error al iniciar sesión', err)
+        alert('Credenciales inválidas o error de servidor')
       }
-    });
+    })
   }
 }

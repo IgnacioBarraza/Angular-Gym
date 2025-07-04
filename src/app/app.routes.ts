@@ -6,14 +6,22 @@ import { About } from './pages/about/about';
 import { Machines } from './pages/machines/machines';
 import { Routines } from './pages/routines/routines';
 import { Exercises } from './pages/exercises/exercises';
+import { MainLayout } from './layouts/main-layout/main-layout';
 
 export const routes: Routes = [
     {path: 'login', component: Login},
     {path: 'register', component: Register},
-    {path: 'dashboard', component: Dashboard},
-    {path: 'acerca', component: About},
-    {path: 'maquinas', component: Machines},
-    {path: 'rutinas', component: Routines},
-    {path: 'ejercicios', component: Exercises},
-    {path: '', redirectTo: 'login', pathMatch: 'full' },
+    {path: '', redirectTo: 'login', pathMatch: 'full'},
+
+  {
+    path: '',
+    component: MainLayout,
+    children: [
+      { path: 'dashboard', component: Dashboard },
+      { path: 'acerca', component: About },
+      { path: 'maquinas', component: Machines },
+      { path: 'rutinas', component: Routines },
+      { path: 'ejercicios', component: Exercises },
+    ]
+  },
 ];
